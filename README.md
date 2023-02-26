@@ -1,7 +1,5 @@
-# tfm-threepoints-tropicalmitch
+## Front-end para un E-commerce de la empresa Tropical Mitch
 
-## Repositorio del Trabajo Final de Master 
+### Front-end desarrolado en NextJS
 
-### E-commerce para la Empresa Tropical Mitch
-
-Creación de un E-commerce, como TFM para Three Points 2022-2023, para el master en Full Stack Web Development. 
+Usamos NextJs para realizar los distintos componentes del e-commerce. Este front-end está pensado para ser usado con Strapi como back-end.
