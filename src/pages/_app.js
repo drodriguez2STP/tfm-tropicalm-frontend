@@ -1,20 +1,32 @@
-import React, { useState, useMemo } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import { ToastContainer } from "react-toastify"
 import jwtDecode from "jwt-decode";
 import AuthContext from "../context/AuthContext";
-import { setToken } from "../api/token"; 
+import { setToken, getToken } from "../api/token"; 
 import "../scss/global.scss"
 import 'semantic-ui-css/semantic.min.css'
 import 'react-toastify/dist/ReactToastify.css';
 
 export default function App({ Component, pageProps }) {
   const [auth, setAuth] = useState(undefined);
-  console.log(auth);
+  const [reloadUser, setReloadUser] = useState(false);
+
+  useEffect(() => {
+    const token = getToken();
+    
+    if(token){
+      setAuth({
+        token,
+        idUser: jwtDecode(token).id,
+      })
+    } else {
+      setAuth(null);
+    }
+    setReloadUser(false);
+  }, [setReloadUser]);
+
   const login = (token) => {
-    setToken(token);
-    // console.log(token);
-    // console.log("Estamos en APP.js")
-    // console.log(jwtDecode(token));
+    setToken(token);    
     setAuth({
       token,
       idUser: jwtDecode(token).id,
@@ -25,10 +37,13 @@ export default function App({ Component, pageProps }) {
       auth,
       login,
       logout: () => null,
-      setReloadUser: () => null,
+      setReloadUser,
     }),
-    []
+    [auth]
   );
+
+  if(auth === undefined) return null;
+
   return (
     <AuthContext.Provider value={authData}>
       <Component {...pageProps} />
