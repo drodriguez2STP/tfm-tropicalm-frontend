@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useMemo } from "react";
 import { ToastContainer } from "react-toastify"
 import jwtDecode from "jwt-decode";
-import AuthContext from "../context/AuthContext";
+import AuthContext from "../context/authContext";
 import { setToken, getToken } from "../api/token"; 
 import "../scss/global.scss"
 import 'semantic-ui-css/semantic.min.css'

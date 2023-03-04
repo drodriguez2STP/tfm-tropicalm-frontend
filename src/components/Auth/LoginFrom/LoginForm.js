@@ -27,6 +27,14 @@ export default function LoginForm(props){
             setLoading(false);
         }
     });
+
+    const resetPassword = () => {
+        formik.setErrors({});
+        const validateEmail = Yup.string().email().required();
+
+        console.log(formik.values.identifire);
+    }
+
     return(
         <Form className="login-form" onSubmit={formik.handleSubmit}>
             <Form.Input 
@@ -47,7 +55,7 @@ export default function LoginForm(props){
                 <Button type="button" basic onClick={showRegisterForm}>Registrarse</Button>
                 <div>
                     <Button className="submit" type="submit" loading={loading}>Entrar</Button>
-                    <Button className="" type="button">¿Has olvidado la contraseña?</Button>
+                    <Button className="" type="button" onClick={resetPassword}>¿Has olvidado la contraseña?</Button>
                 </div>
             </div>
         </Form>
