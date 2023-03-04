@@ -1,5 +1,14 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Start up project
+### Yarn installation 
+```npm install --global yarn```
+### Yarn version
+```yarn --version```
+### Install the dependences
+You can use *yarn* even if you were already working with *npm*, all you have to do is delete the *package-lock.json* file for yarn to work without problems.
+```yarn or yarn install```
+
 ## Getting Started
 
 First, run the development server:
