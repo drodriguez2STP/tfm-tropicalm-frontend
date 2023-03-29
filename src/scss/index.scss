@@ -9,3 +9,10 @@
 @import "../components/Header/Menu/Menu.scss";
 @import "../components/Modal/BasicModal/BasicModal.scss";
 @import "../components/Auth/LoginFrom/LoginForm.scss";
+@import "../components/Footer/Footer.scss";
+
+// Pages
+@import "../pages/Home/Home.module.scss";
+@import "../pages/Nosotros/Nosotros.module.scss";
+@import "../pages/Tienda/Tienda.module.scss";
+@import "../pages/Contacto/Contacto.module.scss";

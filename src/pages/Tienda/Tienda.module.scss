@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;500;600;700;800;900&display=swap");
+
+.tienda {
+  padding: 30px;
+  height: 700px;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../../../public/background-tienda1_Mesa\ de\ trabajo\ 1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  .tienda-ti {
+    font-size: 60px;
+    color: $background-dark;
+    font-family: "Nunito", sans-serif;
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 75px;
+  }
+
+  .columns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    .card {
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 320px;
+      height: 400px;
+      background-color: white;
+      box-shadow: 2px 2px 20px -2px #e5e5e5;
+
+      .ti-jugo {
+        font-family: "Nunito", sans-serif;
+        font-size: 30px;
+        color: $background-dark;
+      }
+
+      .precio {
+        font-size: 25px;
+        color: $primary;
+      }
+
+      .home-btn {
+        font-size: 20px;
+        font-family: "Nunito", sans-serif;
+        padding: 10px 40px;
+        background-color: $success;
+        color: #fff;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+
+        &:hover {
+          background-color: $primary;
+          color: #fff;
+        }
+      }
+    }
+  }
+}

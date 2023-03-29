@@ -1,0 +1,52 @@
+.footer {
+  background-color: $background-dark;
+  padding: 30px 0;
+}
+
+.columns {
+  display: flex;
+  justify-content: space-between;
+
+  > div {
+    width: 33.33%;
+
+    > a > img {
+      width: 150px;
+    }
+
+    > ul {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      margin: 0;
+      padding: 0;
+
+      .linksf {
+        color: white;
+      }
+    }
+
+    &.social {
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-start;
+
+      > a {
+        margin-left: 10px;
+      }
+    }
+  }
+}
+
+.pie {
+  background-color: $success;
+  padding: 20px;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+
+  > h5 {
+    color: white;
+  }
+}

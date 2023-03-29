@@ -1,47 +1,48 @@
 .menu {
-    background-color: $background-green;
-    border-radius: 0;
+  background-color: $background-green;
+  border-radius: 0;
 
-    .ui.grid {
-        margin: 0;
-    }
-    
-    &__left, &__right {
-        padding: 0 !important;
-        display: flex !important;
-        align-items: center;
+  .ui.grid {
+    margin: 0;
+  }
 
-        .ui.menu {
-            border: 0;
-            box-shadow: none;
-            height: 100%;
-            background:transparent;
+  &__left,
+  &__right {
+    padding: 0 !important;
+    display: flex !important;
+    align-items: center;
 
-            .icon {
-                margin-right: 10px !important;
-                color: $primary;
-            }
+    .ui.menu {
+      border: 0;
+      box-shadow: none;
+      height: 100%;
+      background: transparent;
 
-            .item {
-                color: $font-light;
-                border-radius: 0 !important;
+      .icon {
+        margin-right: 10px !important;
+        color: $font-light;
+      }
 
-                &:hover {
-                    color: $font-light;
-                    background-color: $background-yellow;
-                    &:before {
-                        background-color: $background-yellow;
-                    }
-                }
-                &.m-0 i{
-                    margin: 0 !important;
-                }
-            }
+      .item {
+        color: $font-light;
+        border-radius: 0 !important;
+
+        &:hover {
+          color: $font-light;
+          background-color: $background-yellow;
+          &:before {
+            background-color: $background-yellow;
+          }
         }
+        &.m-0 i {
+          margin: 0 !important;
+        }
+      }
     }
+  }
 
-    &__right{
-        display: flex;
-        justify-content: flex-end;
-    }
+  &__right {
+    display: flex;
+    justify-content: flex-end;
+  }
 }

@@ -1,11 +1,9 @@
-import TopBar from "./TopBar";
 import Menu from "./Menu";
 
 export default function Header() {
-    return (
+  return (
     <div className="header">
-        <TopBar />
-        <Menu />
+      <Menu />
     </div>
-    );
+  );
 }

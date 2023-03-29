@@ -1,9 +1,10 @@
 import BasicLayout from "../layouts/BasicLayout";
-export default function Home() {
+import Home from "./Home/Home";
+
+export default function Principal() {
   return (
     <BasicLayout>
-      <h1>Estamos en la Home</h1>
-
+      <Home />
     </BasicLayout>
-  )
+  );
 }

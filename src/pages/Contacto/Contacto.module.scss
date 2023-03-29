@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;500;600;700;800;900&display=swap");
+
+.contacto {
+  padding: 50px;
+
+  .formulario-text {
+    font-size: 40px;
+    color: $background-dark;
+    font-family: "Nunito", sans-serif;
+    text-align: left;
+    margin-bottom: 75px;
+  }
+
+  .columns2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    .um {
+      .card-form {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 420px;
+        height: 500px;
+        background-color: white;
+        box-shadow: 2px 2px 20px -2px #e5e5e5;
+
+        form {
+          .form-group {
+            label {
+              display: block;
+              margin-bottom: 5px;
+              font-weight: bold;
+            }
+            input,
+            textarea {
+              width: 100%;
+              padding: 10px;
+              border: none;
+              border-radius: 5px;
+              background-color: #f2f2f2;
+              &:focus {
+                outline: none;
+                background-color: #e5e5e5;
+              }
+            }
+            #name {
+              margin-bottom: 10px;
+            }
+            #phone,
+            #email,
+            #comments {
+              margin-top: 10px;
+            }
+            #name,
+            #email,
+            #comments {
+              border: none;
+            }
+          }
+          .home-btn {
+            font-size: 20px;
+            font-family: "Nunito", sans-serif;
+            padding: 10px 40px;
+            background-color: $success;
+            color: #fff;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+
+            &:hover {
+              background-color: $primary;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+
+    .dois {
+      .infos {
+        font-size: 25px;
+        color: $background-dark;
+        font-family: "Nunito", sans-serif;
+        text-align: left;
+      }
+    }
+  }
+}
