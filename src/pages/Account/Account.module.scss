@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;500;600;700;800;900&display=swap");
+
+.account {
+  padding: 30px;
+  height: 700px;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../../../public/background-tienda1_Mesa\ de\ trabajo\ 1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  .account-title {
+    font-size: 60px;
+    color: $background-dark;
+    font-family: "Nunito", sans-serif;
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 75px;
+  }
+
+  .columns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    .card1 {
+      display: flex;
+      flex-direction: row;
+      background-color: white;
+      box-shadow: 2px 2px 20px -2px #e5e5e5;
+      padding: 30px;
+      margin: 30px;
+      justify-content: space-around;
+      align-items: baseline;
+      flex: 2;
+    }
+  }
+}

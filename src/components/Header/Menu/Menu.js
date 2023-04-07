@@ -4,7 +4,6 @@ import Link from "next/link";
 import BasicModal from "../../Modal/BasicModal";
 import Auth from "../../Auth";
 
-
 export default function MenuWeb() {
   const [showModal, setShowModal] = useState(false);
   const [titleModal, setTitleModal] = useState("Inicia sesión");
@@ -50,7 +49,6 @@ function MenuPlatforms() {
       <Link href="/Contacto">
         <Menu.Item>Contacto</Menu.Item>
       </Link>
-      
     </Menu>
   );
 }
@@ -65,6 +63,9 @@ function MenuOptions(props) {
       </Menu.Item>
       <Link href="/Carrito">
         <Menu.Item>Carrito</Menu.Item>
+      </Link>
+      <Link href="/FinalizarCompra">
+        <Menu.Item>Finalizar Compra</Menu.Item>
       </Link>
     </Menu>
   );
