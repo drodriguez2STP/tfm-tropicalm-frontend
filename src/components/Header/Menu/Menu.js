@@ -50,6 +50,7 @@ function MenuPlatforms() {
       <Link href="/Contacto">
         <Menu.Item>Contacto</Menu.Item>
       </Link>
+      
     </Menu>
   );
 }
@@ -62,6 +63,9 @@ function MenuOptions(props) {
         <Icon name="user outline" />
         Mi cuenta
       </Menu.Item>
+      <Link href="/Carrito">
+        <Menu.Item>Carrito</Menu.Item>
+      </Link>
     </Menu>
   );
 }
