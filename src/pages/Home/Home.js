@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Container, Image } from "semantic-ui-react";
+import { Container, Menu, Image } from "semantic-ui-react";
 
 export default function Home() {
   return (
@@ -10,13 +10,20 @@ export default function Home() {
             <Container>
               <div className="columns">
                 <div className="background"></div>
-                <div>
-                  <Image src="public/logotm.png" alt="Tropical Mitch logo" />
+                <div className="logo-banner">
+                  <Image
+                    src="https://tfm-tropicalm-strapi-production.up.railway.app/uploads/logotm_8eefcacece.png"
+                    alt="Tropical Mitch logo"
+                  />
                   <h1 className="titulo">
                     Tropical <br />
                     Mitch
                   </h1>
-                  <button className="home-btn">Comprar</button>
+                  <button className="home-btn">
+                    <Link href="/Tienda">
+                      <Menu.Item>Comprar</Menu.Item>
+                    </Link>
+                  </button>
                 </div>
               </div>
             </Container>
@@ -80,9 +87,9 @@ export default function Home() {
                         </Link>
                       </ul>
                     </div>
-                    <div className="dos">
-                      <h2 className="porque">¿Por qué elegirnos?</h2>
-                    </div>
+                  </div>
+                  <div className="dos">
+                    <h2 className="porque">¿Por qué elegirnos?</h2>
                   </div>
                 </div>
               </Container>
