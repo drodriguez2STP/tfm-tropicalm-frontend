@@ -21,7 +21,9 @@ export default function Tienda() {
                   />
                   <h3 className="ti-jugo">Jugo Natural</h3>
                   <p className="precio">700 ml</p>
-                  <button className="home-btn">Comprar</button>
+                  <button className="home-btn">
+                    <Link href="/Producto">Comprar</Link>
+                  </button>
                 </div>
               </div>
               <div className="two">
@@ -32,7 +34,9 @@ export default function Tienda() {
                   />
                   <h3 className="ti-jugo">Jugo Natural</h3>
                   <p className="precio">700 ml</p>
-                  <button className="home-btn">Comprar</button>
+                  <button className="home-btn">
+                    <Link href="/Producto">Comprar</Link>
+                  </button>
                   <div className="two"></div>
                 </div>
               </div>

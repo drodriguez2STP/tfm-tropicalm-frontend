@@ -64,9 +64,6 @@ function MenuOptions(props) {
       <Link href="/Carrito">
         <Menu.Item>Carrito</Menu.Item>
       </Link>
-      <Link href="/FinalizarCompra">
-        <Menu.Item>Finalizar Compra</Menu.Item>
-      </Link>
     </Menu>
   );
 }

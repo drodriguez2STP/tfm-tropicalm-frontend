@@ -57,6 +57,10 @@
         border-radius: 20px;
         cursor: pointer;
 
+        a {
+          color: white;
+        }
+
         &:hover {
           background-color: $primary;
           color: #fff;

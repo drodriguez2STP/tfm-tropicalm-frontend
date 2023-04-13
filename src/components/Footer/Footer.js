@@ -9,16 +9,16 @@ export default function Footer() {
       <Container>
         <div className="columns">
           <div>
-            <Link href="/">
+            <Link className="linksf" href="/">
               <Image src="public/logotm.png" alt="Tropical Mitch logo" />
             </Link>
           </div>
           <div>
             <ul>
-              <Link as="a" href="#" className="linksf">
+              <Link as="a" href="/Tienda" className="linksf">
                 Tienda
               </Link>
-              <Link as="a" href="#" className="linksf">
+              <Link as="a" href="/Contacto" className="linksf">
                 Contacto
               </Link>
               <Link as="a" href="#" className="linksf">
@@ -43,7 +43,7 @@ export default function Footer() {
       </Container>
       <Container>
         <div className="pie">
-          <h5>Desarrollado por:</h5>
+          <h5>Desarrollado por: Equipo 2 Máster Web Development Fullstack</h5>
         </div>
       </Container>
     </div>

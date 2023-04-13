@@ -63,7 +63,9 @@ export default function Carrito() {
                   </div>
                 </div>
 
-                <button className="buy-btn">Finalizar Compra</button>
+                <button className="buy-btn">
+                  <Link href="/FinalizarCompra">Finalizar Compra</Link>
+                </button>
               </div>
             </div>
           </Container>

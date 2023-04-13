@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;500;600;700;800;900&display=swap");
+
+.producto {
+  padding: 30px;
+  height: 700px;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../../../public/back-producto_Mesa\ de\ trabajo\ 1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  .columns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    .card {
+      margin-top: 200px;
+      margin-left: -120px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 320px;
+      height: 400px;
+      background-color: white;
+      box-shadow: 2px 2px 20px -2px #e5e5e5;
+    }
+
+    .card1 {
+      margin-top: 90px;
+      margin-left: 120px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 220px;
+      height: 70px;
+      background-color: white;
+      box-shadow: 2px 2px 20px -2px #e5e5e5;
+      border-left: solid 5px $primary;
+
+      .producto-ti {
+        font-family: "Nunito", sans-serif;
+        font-size: 20px;
+        color: $font-dark;
+      }
+    }
+
+    .descripcion-prod {
+      margin-top: 30px;
+      font-family: "Nunito", sans-serif;
+      text-align: center;
+      margin-left: 100px;
+    }
+
+    .precio-producto {
+      margin-top: 30px;
+      font-family: "Nunito", sans-serif;
+      text-align: center;
+      margin-left: 100px;
+      font-weight: 800;
+      font-size: 25px;
+    }
+
+    input {
+      width: 40px;
+      padding: 5px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      text-align: center;
+    }
+
+    .cantidad-boton {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: flex-end;
+
+      .product-cart-quantity {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 30px;
+
+        input {
+          background-color: rgb(241, 241, 241);
+        }
+      }
+
+      .product-cart-button {
+        display: flex;
+        flex-direction: column;
+
+        .home-btn {
+          margin-top: -60px;
+          font-size: 16px;
+          font-family: "Nunito", sans-serif;
+          padding: 10px 20px;
+          background-color: $success;
+          color: #fff;
+          border: none;
+          border-radius: 20px;
+          cursor: pointer;
+
+          a {
+            color: white;
+          }
+
+          &:hover {
+            background-color: $primary;
+            color: #fff;
+          }
+        }
+      }
+    }
+
+    .sku-cat {
+      margin-top: 30px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: flex-end;
+
+      .sku {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .skus {
+          font-size: 16px;
+          font-family: "Nunito", sans-serif;
+          font-weight: 700;
+          color: $success;
+          margin-right: 10px;
+        }
+      }
+
+      .catego {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .catename {
+          font-size: 16px;
+          font-family: "Nunito", sans-serif;
+          font-weight: 700;
+          color: $success;
+        }
+      }
+    }
+  }
+}

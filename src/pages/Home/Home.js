@@ -11,18 +11,13 @@ export default function Home() {
               <div className="columns">
                 <div className="background"></div>
                 <div className="logo-banner">
-                  <Image
-                    src="https://tfm-tropicalm-strapi-production.up.railway.app/uploads/logotm_8eefcacece.png"
-                    alt="Tropical Mitch logo"
-                  />
+                  <Image src="#" alt="Tropical Mitch logo" />
                   <h1 className="titulo">
                     Tropical <br />
                     Mitch
                   </h1>
                   <button className="home-btn">
-                    <Link href="/Tienda">
-                      <Menu.Item>Comprar</Menu.Item>
-                    </Link>
+                    <Link href="/Tienda">Comprar</Link>
                   </button>
                 </div>
               </div>
@@ -38,7 +33,9 @@ export default function Home() {
                       />
                       <h3 className="ti-jugo">Jugo Natural</h3>
                       <p className="precio">700 ml</p>
-                      <button className="home-btn">Comprar</button>
+                      <button className="home-btn">
+                        <Link href="/Producto">Comprar</Link>
+                      </button>
                     </div>
                   </div>
                   <div className="segunda">
@@ -59,7 +56,9 @@ export default function Home() {
                       />
                       <h3 className="ti-jugo">Jugo Natural</h3>
                       <p className="precio">700 ml</p>
-                      <button className="home-btn">Comprar</button>
+                      <button className="home-btn">
+                        <Link href="/Producto">Comprar</Link>
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -81,11 +80,9 @@ export default function Home() {
                         of type and scram bled it to make a type specimen book.
                         It has sur vived not only five centuries
                       </p>
-                      <ul>
-                        <Link as="a" href="#" className="leer">
-                          Leer más
-                        </Link>
-                      </ul>
+                      <button className="home-btn">
+                        <Link href="/Nosotros">Leer más</Link>
+                      </button>
                     </div>
                   </div>
                   <div className="dos">
