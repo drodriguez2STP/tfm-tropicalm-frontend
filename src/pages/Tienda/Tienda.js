@@ -16,7 +16,7 @@ export default function Tienda() {
               <div className="one">
                 <div className="card">
                   <Image
-                    src="public/botella de jugo tm_Mesa de trabajo 1"
+                    src="./botella_de_jugo_tm_Mesa_de_trabajo_1.png"
                     alt="Botella de jugo"
                   />
                   <h3 className="ti-jugo">Jugo Natural</h3>
@@ -29,7 +29,7 @@ export default function Tienda() {
               <div className="two">
                 <div className="card">
                   <Image
-                    src="public/botella de jugo tm_Mesa de trabajo 1"
+                    src="./botella_de_jugo_tm_Mesa_de_trabajo_1.png"
                     alt="Botella de jugo"
                   />
                   <h3 className="ti-jugo">Jugo Natural</h3>

@@ -10,7 +10,7 @@ export default function Footer() {
         <div className="columns">
           <div>
             <Link className="linksf" href="/">
-              <Image src="public/logotm.png" alt="Tropical Mitch logo" />
+              <Image className="logo-footer" src="./logotm.png" alt="Tropical Mitch logo" />
             </Link>
           </div>
           <div>
