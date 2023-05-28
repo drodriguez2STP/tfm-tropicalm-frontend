@@ -5,18 +5,30 @@
   padding: 0;
   font-family: "Nunito", sans-serif;
 
+
+  .logo-banner .logo-img {
+    padding: 0;
+    height: 20em;
+    margin: -5em 0;
+  }
+
   .banner {
     .columns {
       display: flex;
       justify-content: center;
       align-items: center;
+      height: 100%;
 
       .background {
         background-image: url("../../../public/banner\ img\ tropical_Mesa\ de\ trabajo\ 1.png");
         background-size: cover;
         background-position: center;
         width: 50%;
+        height: 100%;
         height: 650px;
+        grid-column: span 2;
+        width: 80%;
+
       }
 
       > div {
@@ -24,7 +36,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 50%;
+        width: 100%;
         height: 650px;
 
         .titulo {

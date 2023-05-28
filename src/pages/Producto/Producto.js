@@ -15,7 +15,7 @@ export default function Producto() {
               <div className="one">
                 <div className="card">
                   <Image
-                    src="public/botella de jugo tm_Mesa de trabajo 1"
+                    src="./botella_de_jugo_tm_Mesa_de_trabajo_1.png"
                     alt="Botella de jugo"
                   />
                 </div>

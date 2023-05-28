@@ -4,6 +4,7 @@ body {
   background-color: white;
   margin: 0;
   padding: 0;
+ 
 }
 
 .ui.form {
@@ -51,5 +52,17 @@ body {
     background-color: $primary;
     color: $font-light;
     margin: 0 0.3rem;
+  }
+}
+@media only screen and (max-width: 1199px) {
+
+}
+@media only screen and (max-width: 767px){
+  body { 
+    width: 100vh;
+  }
+
+  .home .banner .columns .background {
+    width: 100%;
   }
 }

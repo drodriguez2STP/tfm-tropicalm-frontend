@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { Container, Menu, Image } from "semantic-ui-react";
 
+
+
 export default function Home() {
   return (
     <>
@@ -11,7 +13,7 @@ export default function Home() {
               <div className="columns">
                 <div className="background"></div>
                 <div className="logo-banner">
-                  <Image src="#" alt="Tropical Mitch logo" />
+                  <Image className="logo-img" src="./logotm.png" alt="Tropical Mitch logo" />
                   <h1 className="titulo">
                     Tropical <br />
                     Mitch
@@ -28,7 +30,7 @@ export default function Home() {
                   <div className="primera">
                     <div className="card">
                       <Image
-                        src="public/botella de jugo tm_Mesa de trabajo 1"
+                        src="./botella_de_jugo_tm_Mesa_de_trabajo_1.png"
                         alt="Botella de jugo"
                       />
                       <h3 className="ti-jugo">Jugo Natural</h3>
@@ -51,7 +53,7 @@ export default function Home() {
                   <div className="tercera">
                     <div className="card">
                       <Image
-                        src="public/botella de jugo tm_Mesa de trabajo 1"
+                        src="./botella_de_jugo_tm_Mesa_de_trabajo_1.png"
                         alt="Botella de jugo"
                       />
                       <h3 className="ti-jugo">Jugo Natural</h3>
